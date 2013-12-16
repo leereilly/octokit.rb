@@ -141,7 +141,7 @@ that you can use for subsequent calls.
 
 ### Two-Factor Authentication
 
-[Two-Factor Authentication](https://help.github.com/articles/about-two-factor-authentication) brings added security to the account by requiring more information to login. 
+[Two-Factor Authentication](https://help.github.com/articles/about-two-factor-authentication) brings added security to the account by requiring more information to login.
 
 Using two-factor authentication for API calls is as simple as adding the [required header](http://developer.github.com/v3/auth/#working-with-two-factor-authentication) as an option:
 
@@ -259,16 +259,16 @@ number of client instances based on some shared defaults.
 Every writable attribute in {Octokit::Configurable} can be set one at a time:
 
 ```ruby
-Octokit.api_endpoint = 'http://api.github.dev'
-Octokit.web_endpoint = 'http://github.dev'
+Octokit.api_endpoint = 'http://api.github.com'
+Octokit.web_endpoint = 'http://github.com'
 ```
 
 or in batch:
 
 ```ruby
 Octokit.configure do |c|
-  c.api_endpoint = 'http://api.github.dev'
-  c.web_endpoint = 'http://github.dev'
+  c.api_endpoint = 'http://api.github.com'
+  c.web_endpoint = 'http://github.com'
 end
 ```
 
@@ -279,10 +279,10 @@ attributes will look for a default value from the ENV before returning
 Octokit's default.
 
 ```ruby
-# Given $OCTOKIT_API_ENDPOINT is "http://api.github.dev"
+# Given $OCTOKIT_API_ENDPOINT is "http://api.github.com"
 Octokit.api_endpoint
 
-# => "http://api.github.dev"
+# => "http://api.github.com"
 ```
 
 ## Hypermedia agent
